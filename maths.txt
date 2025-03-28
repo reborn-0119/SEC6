@@ -1,0 +1,53 @@
+\documentclass[a4paper,12pt]{article} % Document class
+
+\usepackage{amsmath} % For advanced math formatting
+
+\begin{document}
+
+\section{Mathematics Section} % Math Section Title
+
+\subsection{Quadratic Equation}
+
+The general quadratic equation is given by:
+\begin{equation}
+    ax^2 + bx + c = 0
+\end{equation}
+
+The solution using the quadratic formula:
+\begin{equation}
+    x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\end{equation}
+
+For \( a = 1 \), \( b = -5 \), and \( c = 6 \), we solve:
+\begin{align}
+    x &= \frac{-(-5) \pm \sqrt{(-5)^2 - 4(1)(6)}}{2(1)} \\
+    &= \frac{5 \pm \sqrt{25 - 24}}{2} \\
+    &= \frac{5 \pm 1}{2}
+\end{align}
+
+So, the two possible values of \( x \) are:
+\begin{align}
+    x_1 &= \frac{5 + 1}{2} = 3 \\
+    x_2 &= \frac{5 - 1}{2} = 2
+\end{align}
+
+\subsection{Equation Array Example}
+
+Using `eqnarray` for aligned equations:
+\begin{eqnarray}
+    a + b &=& c \\
+    d - e &=& f \\
+    x^2 &+& 2x - 3 = 0
+\end{eqnarray}
+
+\subsection{Use of Minus-Plus (\texttt{\textbackslash pm}) and Plus-Minus (\texttt{\textbackslash mp})}
+
+The symbols \( \pm \) (plus-minus) and \( \mp \) (minus-plus) are used in equations like:
+\begin{equation}
+    x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\end{equation}
+\begin{equation}
+    y = \frac{a \mp b}{c}
+\end{equation}
+
+\end{document}
