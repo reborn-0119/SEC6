@@ -1,0 +1,189 @@
+\documentclass[a4paper,12pt]{article} 
+
+\usepackage{geometry}
+\geometry{margin=1in} 
+
+\usepackage{setspace}
+\onehalfspacing % 1.5 line spacing
+
+
+\usepackage{enumitem} 
+\usepackage{booktabs} 
+\usepackage{graphicx} 
+\usepackage{amsmath}  
+\usepackage{amssymb} 
+
+\title{\Huge \textbf{ASSIGNMENT}} % Title
+\author{\Large Anubhav Bharti} % Author
+\date{\Large \today} % Current date
+
+\begin{document}
+	
+	\maketitle % Display title, author, and date
+	
+	\newpage % Page break
+	
+	\section{Introduction to LaTeX}
+	LaTeX is a high-quality typesetting system commonly used for academic and scientific documents. It provides professional formatting, mathematical typesetting, and powerful document structuring. Unlike WYSIWYG editors, LaTeX allows users to focus on content while ensuring consistent formatting.
+	
+	\section{Lists in LaTeX}
+	\subsection{Bulleted List}
+	\begin{itemize}
+		\item LaTeX is powerful
+		\item Used for research papers
+		\item Supports complex document structures
+	\end{itemize}
+	
+	\subsection{Numbered List}
+	\begin{enumerate}
+		\item Introduction to LaTeX
+		\item Writing structured documents
+		\item Advanced formatting features
+	\end{enumerate}
+	
+	\subsection{Definition List}
+	\begin{description}
+		\item[LaTeX] A document preparation system.
+		\item[TeX] A typesetting language.
+		\item[Overleaf] An online LaTeX editor.
+	\end{description}
+	
+	\newpage % Page break
+	
+	\section{Tables in LaTeX}
+	Tables in LaTeX allow structured data representation. Below is an example:
+	
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\textbf{Row} & \textbf{Column 1} & \textbf{Column 2} \\
+			\hline
+			1 & Data A & Data B \\
+			2 & Data C & Data D \\
+			3 & Data E & Data F \\
+			\hline
+		\end{tabular}
+		\caption{Simple Table Example}
+		\label{tab:example1}
+	\end{table}
+	
+	A more professional-looking table using `booktabs`:
+	
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{lcc}
+			\toprule
+			\textbf{Category} & \textbf{Value 1} & \textbf{Value 2} \\
+			\midrule
+			Type A  & 10 & 20 \\
+			Type B  & 30 & 40 \\
+			Type C  & 50 & 60 \\
+			\bottomrule
+		\end{tabular}
+		\caption{Formatted Table Example}
+		\label{tab:example2}
+	\end{table}
+	
+	\newpage % Page break
+	
+	\section{Mathematical Equations in LaTeX}
+	LaTeX provides excellent support for mathematical typesetting. Below are different ways to write equations.
+	
+	\subsection{Single Equation}
+	A simple mathematical equation using the `equation` environment:
+	\begin{equation}
+		E = mc^2
+	\end{equation}
+	
+	\subsection{Aligned Equations}
+	We can align equations using the `align` environment:
+	\begin{align}
+		x + y &= 10 \\
+		2x - y &= 5
+	\end{align}
+	
+	\subsection{Equation Array}
+	Using `eqnarray`, multiple steps of an equation can be shown:
+	\begin{eqnarray}
+		a &=& b + c \nonumber \\
+		&=& d - e \nonumber \\
+		&=& f \times g
+	\end{eqnarray}
+	
+	\subsection{Fractions, Summations, and Integrals}
+	LaTeX supports various mathematical symbols:
+	\begin{equation}
+		f(x) = \frac{1}{x} + \sum_{n=1}^{\infty} \frac{1}{n^2} + \int_0^1 x^2 \,dx
+	\end{equation}
+	
+	\subsection{Quadratic Equation}
+	The general quadratic equation is given by:
+	\begin{equation}
+		ax^2 + bx + c = 0
+	\end{equation}
+	
+	The quadratic formula for solving \(x\) is:
+	\begin{equation}
+		x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+	\end{equation}
+	
+	We can also write equations using the minus-plus symbol:
+	\begin{equation}
+		x = \frac{-b \mp \sqrt{b^2 - 4ac}}{2a}
+	\end{equation}
+	
+	\subsection{Solving a Quadratic Equation}
+	
+	Let's solve the quadratic equation:
+	\begin{equation}
+		x^2 - 5x + 6 = 0
+	\end{equation}
+	
+	Using the quadratic formula:
+	\begin{equation}
+		x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+	\end{equation}
+	
+	For \( a = 1 \), \( b = -5 \), and \( c = 6 \), we substitute the values:
+	\begin{align}
+		x &= \frac{-(-5) \pm \sqrt{(-5)^2 - 4(1)(6)}}{2(1)} \\
+		&= \frac{5 \pm \sqrt{25 - 24}}{2} \\
+		&= \frac{5 \pm \sqrt{1}}{2} \\
+		&= \frac{5 \pm 1}{2}
+	\end{align}
+	
+	So, the two solutions are:
+	\begin{align}
+		x_1 &= \frac{5 + 1}{2} = 3 \\
+		x_2 &= \frac{5 - 1}{2} = 2
+	\end{align}
+	
+	Thus, the roots of the equation \( x^2 - 5x + 6 = 0 \) are:
+	\begin{equation}
+		x = 2, \quad x = 3
+	\end{equation}
+	
+
+	\newpage
+	\section{Images in LaTeX}
+	LaTeX allows inserting images using the `graphicx` package. Below are two examples:
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{img1.png}
+		\caption{Example Image 1}
+		\label{fig:image1}
+	\end{figure}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{img2.png}
+		\caption{Example Image 2}
+		\label{fig:image2}
+	\end{figure}
+	
+	\section{Footnotes}
+	This is an example of a footnote.\footnote{Footnotes provide additional information without cluttering the main text.}
+	
+\end{document}
